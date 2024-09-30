@@ -35,7 +35,7 @@ void printFile(std::string filePath, short x, short y)
 void parseLyrics(std::string lyrics[])
 {
 	std::ifstream fs;
-	fs.open("lyrics.txt");
+	fs.open("assets/lyrics.txt");
 	std::string temp;
 	
 	for (int i = 0; i < TOTAL_LYRIC_LINES; ++i)
@@ -82,13 +82,29 @@ int printLyric(std::string lyrics[], short line, short& x, short& y, int totalTi
 		y += 1;
 		return totalTime;
 	}
+	else if (temp == "}")
+	{
+		clearLyricWindow();
+		x = 1;
+		y = 1;
+		return totalTime;
+	}
 	
 	setCursorPosition(x, y);
 	std::cout << ' ';
 
 	for (short i{ 0 }; i < lyrics[line].size(); ++i)
 	{
-		std::cout << lyrics[line][i]; 
+		if (temp[i] == '\\')
+		{
+			setCursorPosition(x + 1, y + 1);
+			++y;
+		}
+		else
+		{
+			std::cout << lyrics[line][i]; 
+		}
+
 		waitMilliseconds(static_cast<int>(totalTime / temp.size()));
 	}
 	y += 1;
@@ -98,4 +114,13 @@ int printLyric(std::string lyrics[], short line, short& x, short& y, int totalTi
 void waitMilliseconds(int milliseconds)
 {
 	std::this_thread::sleep_for(std::chrono::milliseconds(milliseconds));
+}
+
+void clearLyricWindow()
+{
+	for (short i{ 1 }; i < 28; ++i)
+	{
+		setCursorPosition(1, i);
+		std::cout << "                                                     ";
+	}
 }

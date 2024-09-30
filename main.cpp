@@ -11,7 +11,7 @@
 int main()
 {
     setConsoleColor(6);
-    printFile("frame.txt", 0, 0);
+    printFile("assets/frame.txt", 0, 0);
 
     std::string lyrics[TOTAL_LYRIC_LINES];
     parseLyrics(lyrics);

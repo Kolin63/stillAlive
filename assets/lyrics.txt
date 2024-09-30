@@ -1,0 +1,122 @@
+!2;
+Forms FORM-29827281-12:
+Test Assessment Report
+ 
+ 
+!0500w
+!2;
+This was a triumph.
+!1800w
+!2;
+I'm making a note here:
+HUGE SUCCESS.
+!0800w
+It's hard to overstate
+!3;
+my satisfaction.
+!1600w
+!2;
+Aperture Science
+!2w
+!3;
+We do what we must\because we can.
+!1700w
+!3;
+For the good of all of us.
+!1700;
+Except the ones who are dead.
+ 
+!4;
+But there's no sense crying\over every mistake.
+You just keep on trying\till you run out of cake.
+!6;
+And the Science gets done.\And you make a neat gun.\For the people who are
+!1;
+still alive.
+!2w
+}
+ 
+!1;
+Forms FORM-55551-5:
+Personnel File Addendum:
+ 
+!2;
+Dear <<Subject Name Here>>,
+ 
+!1w
+!2;
+I'm not even angry.
+!2w
+!4;
+I'm being so sincere right now.
+!2w
+!3;
+Even though you broke my heart.
+!2;
+And killed me.
+!2w
+And tore me to pieces.
+!2w
+!3;
+And threw every piece into a fire.
+!2w
+As they burned it hurt because
+!2;
+I was so happy for you!
+!14;
+Now these points of data\make a beautiful line.\And we're out of beta.\We're releasing on time.\So I'm GLaD. I got burned.\Think of all the things we learned\for the people who are
+!2;
+still alive.
+!1w
+}
+!2;
+Forms FORM-55551-6:\Personnel File Addendum Addendum:
+ 
+!1w
+One last thing:
+ 
+Go ahead and leave me.
+!2w
+!3;
+I think I prefer to stay inside.
+!2w
+!5;
+Maybe you'll find someone else\to help you.
+!2w
+!2;
+Maybe Black Mesa
+!2w
+!3;
+THAT WAS A JOKE. FAT CHANCE.
+!2w
+!3;
+Anyway, this cake is great.
+!2;
+It's so delicious and moist.
+!14;
+Look at me still talking\when there's Science to do.\When I look out there,\it makes me GLaD I'm not you.\I've experiments to run.\There is research to be done.\On the people who are
+!2;
+still alive.
+}
+ 
+ 
+ 
+!3;
+PS: And believe me I am\still alive.
+!1w
+PPS: I'm doing Science and I'm\still alive.
+!1w
+PPPS: I feel FANTASTIC and I'm\still alive.
+ 
+!8;
+FINAL THOUGHT:
+While you're dying I'll be
+still alive.
+ 
+FINAL THOUGHT PS:
+And when you're dead I will be
+still alive.
+ 
+!1w
+!1;
+STILL ALIVE
