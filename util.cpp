@@ -52,20 +52,21 @@ int printLyric(std::string lyrics[], short line, short& x, short& y, int totalTi
 	if (temp[0] == '!')
 	{
 		short delaz{};
-		delaz += (static_cast<int>(temp[1]) - 48) * 1000;
-		if (temp[2] == ';')
+		delaz += (static_cast<int>(temp[1]) - 48) * 10000;
+		delaz += (static_cast<int>(temp[2]) - 48) * 1000;
+		if (temp[3] == ';')
 			return delaz;
-		if (temp[2] == 'w')
+		if (temp[3] == 'w')
 		{
 			waitMilliseconds(delaz);
 			return totalTime;
 		}
 		
-		delaz += (static_cast<int>(temp[2]) - 48) * 100;
-		delaz += (static_cast<int>(temp[3]) - 48) * 10;
-		delaz += (static_cast<int>(temp[4]) - 48) * 1;
+		delaz += (static_cast<int>(temp[3]) - 48) * 100;
+		delaz += (static_cast<int>(temp[4]) - 48) * 10;
+		delaz += (static_cast<int>(temp[5]) - 48) * 1;
 
-		if (temp[5] == 'w')
+		if (temp[6] == 'w')
 		{
 			waitMilliseconds(delaz);
 			return totalTime;
@@ -87,6 +88,13 @@ int printLyric(std::string lyrics[], short line, short& x, short& y, int totalTi
 		clearLyricWindow();
 		x = 1;
 		y = 1;
+		return totalTime;
+	}
+	else if (temp[0] == ':')
+	{
+		if (temp[1] == 'c') clearAsciiWindow();
+		printAscii(temp[1]);
+		++y;
 		return totalTime;
 	}
 	
@@ -123,4 +131,25 @@ void clearLyricWindow()
 		setCursorPosition(1, i);
 		std::cout << "                                                     ";
 	}
+}
+
+void printAscii(char index)
+{
+	std::ifstream fs;
+	std::string asciiDir{ "assets/ascii/" };
+	asciiDir += index;
+	asciiDir += ".txt";
+	fs.open(asciiDir);
+	std::string temp;
+	
+	for (short i = 0; i < 20; ++i)
+	{
+		setCursorPosition(64, 9 + i);
+		std::getline(fs, temp);
+		std::cout << temp;
+	}
+}
+
+void clearAsciiWindow()
+{
 }

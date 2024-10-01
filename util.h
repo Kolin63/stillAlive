@@ -7,5 +7,7 @@ int printLyric(std::string lyrics[], short line, short& x, short& y, int totalTi
 void parseLyrics(std::string lyrics[]);
 void waitMilliseconds(int milliseconds);
 void clearLyricWindow();
+void printAscii(char index);
+void clearAsciiWindow();
 
 #define TOTAL_LYRIC_LINES 84 
