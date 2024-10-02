@@ -64,9 +64,7 @@ int printLyric(std::string lyrics[], short line, short& x, short& y, int totalTi
 		
 		delaz += (static_cast<int>(temp[3]) - 48) * 100;
 		delaz += (static_cast<int>(temp[4]) - 48) * 10;
-		delaz += (static_cast<int>(temp[5]) - 48) * 1;
-
-		if (temp[6] == 'w')
+		if (temp[5] == 'w')
 		{
 			waitMilliseconds(delaz);
 			return totalTime;
@@ -74,13 +72,9 @@ int printLyric(std::string lyrics[], short line, short& x, short& y, int totalTi
 
 		return delaz;
 	}
-	else if (temp == ";")
-	{
-		y = 1;
-	}
 	else if (temp == " ")
 	{
-		y += 1;
+		++y;
 		return totalTime;
 	}
 	else if (temp == "}")
@@ -92,26 +86,24 @@ int printLyric(std::string lyrics[], short line, short& x, short& y, int totalTi
 	}
 	else if (temp[0] == ':')
 	{
-		if (temp[1] == 'c') clearAsciiWindow();
 		printAscii(temp[1]);
-		++y;
+		++line;
 		return totalTime;
 	}
-	
-	setCursorPosition(x, y);
-	std::cout << ' ';
+	else if (temp == "&")
+	{
+		++line;
+		return totalTime;
+	}
 
+	if (lyrics[line - 1] == "&")
+	{
+		setCursorPosition(++x, --y);
+	}
 	for (short i{ 0 }; i < lyrics[line].size(); ++i)
 	{
-		if (temp[i] == '\\')
-		{
-			setCursorPosition(x + 1, y + 1);
-			++y;
-		}
-		else
-		{
-			std::cout << lyrics[line][i]; 
-		}
+		setCursorPosition(++x, y);
+		std::cout << temp[i]; 
 
 		waitMilliseconds(static_cast<int>(totalTime / temp.size()));
 	}
@@ -121,7 +113,7 @@ int printLyric(std::string lyrics[], short line, short& x, short& y, int totalTi
 
 void waitMilliseconds(int milliseconds)
 {
-	std::this_thread::sleep_for(std::chrono::milliseconds(milliseconds));
+	std::this_thread::sleep_for(std::chrono::milliseconds(milliseconds / 1));
 }
 
 void clearLyricWindow()
@@ -145,11 +137,10 @@ void printAscii(char index)
 	for (short i = 0; i < 20; ++i)
 	{
 		setCursorPosition(64, 9 + i);
+		std::cout << "                                         ";
+		setCursorPosition(64, 9 + i);
 		std::getline(fs, temp);
 		std::cout << temp;
 	}
 }
 
-void clearAsciiWindow()
-{
-}

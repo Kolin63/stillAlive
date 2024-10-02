@@ -17,17 +17,18 @@ int main()
     parseLyrics(lyrics);
     
     int delay{};
-    short lyricX{ 1 };
+    short lyricX{ 2 };
     short lyricY{ 1 };
 
-    for (short i{ 0 }; i < TOTAL_LYRIC_LINES; ++i)
+    for (short i{ 1 }; i < TOTAL_LYRIC_LINES; ++i)
     {
-        switch (i)
+        if (lyrics[i - 1] != "&" && lyrics[i] != "&" && lyrics[i][0] != '!' && lyrics[i][0] != ':')
         {
-        case 6:
+            lyricX = 2;
+        }
+        if (i == 7)
+        {
             PlaySound(TEXT("stillAlive.wav"), NULL, SND_FILENAME | SND_ASYNC);
-            break;
-
         }
 
         delay = printLyric(lyrics, i, lyricX, lyricY, delay);

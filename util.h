@@ -8,6 +8,5 @@ void parseLyrics(std::string lyrics[]);
 void waitMilliseconds(int milliseconds);
 void clearLyricWindow();
 void printAscii(char index);
-void clearAsciiWindow();
 
-#define TOTAL_LYRIC_LINES 84 
+#define TOTAL_LYRIC_LINES 172 
