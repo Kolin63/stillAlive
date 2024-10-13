@@ -1,39 +1,32 @@
-#include <windows.h>
-#include <mmsystem.h>
 #include <iostream>
 #include <fstream>
 #include <thread>
+#include <functional>
 #include <string>
-#pragma comment(lib, "winmm.lib") 
+#include <array>
+#include <vector>
 
 #include "util.h"
+#include "credits.h"
+#include "lyrics.h"
+#include "ascii.h"
 
 int main()
 {
     setConsoleColor(6);
     printFile("assets/frame.txt", 0, 0);
 
-    std::string lyrics[TOTAL_LYRIC_LINES];
-    parseLyrics(lyrics);
-    
-    int delay{};
-    short lyricX{ 2 };
-    short lyricY{ 1 };
-
-    for (short i{ 1 }; i < TOTAL_LYRIC_LINES; ++i)
+    std::array<std::string, 28> visibleLyrics; 
+    std::array<std::string, 7> visibleCredits;
+    for (short i{ 0 }; i < 28; ++i)
     {
-        if (lyrics[i - 1] != "&" && lyrics[i] != "&" && lyrics[i][0] != '!' && lyrics[i][0] != ':')
-        {
-            lyricX = 2;
-        }
-        if (i == 7)
-        {
-            PlaySound(TEXT("stillAlive.wav"), NULL, SND_FILENAME | SND_ASYNC);
-        }
-
-        delay = printLyric(lyrics, i, lyricX, lyricY, delay);
+        visibleLyrics[i] = std::string(52, ' ');  // 52 spaces
+        if (i < 7) visibleCredits[i] = std::string(52, ' ');  // 48 spaces
     }
 
+    std::thread creditsThread{ handleCredits, std::ref(visibleCredits) };
+    std::thread lyricsThread{ handleLyrics, std::ref(visibleLyrics) };
+    
     char c;
     std::cin >> c;
 

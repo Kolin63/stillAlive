@@ -131,10 +131,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ascii.cpp" />
+    <ClCompile Include="credits.cpp" />
+    <ClCompile Include="lyrics.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="print.cpp" />
     <ClCompile Include="util.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ascii.h" />
+    <ClInclude Include="credits.h" />
+    <ClInclude Include="lyrics.h" />
+    <ClInclude Include="print.h" />
     <ClInclude Include="util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
