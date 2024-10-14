@@ -14,24 +14,177 @@ some space:
  
 hello there!
 the credits are over! 
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
+ 
+
+ Aaron Halifax
+ Aaron Kearly
+ Alden Kroll
+ Andrew Burke
+ Antoine Bourdon
+ Arsenio Navarro
+ Augusta Butlin
+ Bianca Loomis
+ Chris Douglass
+ Christen Coomer
+ Christopher Chin
+ Dan Berger
+ Dan LeFree
+ Don Holden
+ Doug Valente
+ Eric Strand
+ Gabe Van Engel
+ Garret Rickey
+ Gautam Babbar
+ Gray Horsfield
+ Greg Winkler
+ Hamish McKenzie
+ Iestyn Bleasdale-Shepherd
+ Jason Mitchell
+ Jason Ruymen
+ Jeff Hameluck
+ Jeff Sorensen
+ Jennifer Seeley
+ Jeremy Bennett
+ Joe Demers
+ Joe Han
+ John Cook
+ John McCaskey
+ Jon Huisingh
+ Karen Prell
+ Kathy Gehrig
+ Katie Engel
+ Keith Huggins
+ Lars Jensvold
+ Marc Scaparro
+ Matt Rhoten
+ Matthew Russell
+ Mike Blaszczak
+ Mike Durand
+ Milton Ngan
+ Nick Papineau
+ Patrick McClard
+ Paul Graham
+ Reagan Halifax
+ Realm Lovejoy
+ Rich Kaethler
+ Shawn Zabecki
+ Steve Kalning
+ Vitaliy Genkin
+Design
+ Chet Faliszek
+ Erik Wolpaw
+ John Guthrie
+Programming
+ Adrian Finol
+ Elan Ruskin
+ Joshua Weier
+ Robin Walker
+ Steve Bond
+Visual Arts
+ Bay Raitt
+Audio
+ Jonathan Coulton - 'Still Alive' by
+ Kelly Bailey
+ Mike Morasky
+ Pat Cockburn - Voice recording scheduling and logistics
+ Shana Landsburg - Voice Casting
+ Teri Fiddleman - Voice Casting
+ Tim Larkin
+Voice Actor
+ Ellen McLain - Voices: GlaDOS, Turrets
+ Mike Patton - Voices: THE ANGER SPHERE
+Business
+ Alan Bruggeman - Crack Legal Team
+ Dennis Tessier - Crack Legal Team
+ Karl Quackenbush - Crack Legal Team
+ Kevin Rosenfield - Crack Legal Team
+ Kristen Boraas - Crack Legal Team
+ Liam Lavery - Crack Legal Team
+Thanks
+ Alésia Glidewell - Thanks for the use of their face: Chell
+Unclassified
+ Aaron Barber
+ Aaron Seeler
+ Alex Vlachos
+ Alfred Reynolds
+ Andrea Wicklund
+ Ariel Diaz
+ Bill Fletcher
+ Bill Van Buren
+ Brian Jacobson
+ Bryn Moslow
+ Carl Uhlman
+ Charlie Brown
+ Charlie Burgin
+ Chris Bokitch
+ Chris Green
+ Chris Grinstead
+ Dan Kircher
+ Dario Casali
+ Dave Riller
+ David Sawyer
+ David Speyrer
+ Derrick Birum
+ Dhabih Eng
+ Doug Lombardi
+ Doug Wood
+ Eric Kirchmer
+ Eric Smith
+ Eric Smith
+ Eric Twelker
+ Erik Johnson
+ Gabe Newell
+ Gary McTaggart
+ Greg Coomer
+ Ido Magal
+ Iikka Keränen
+ Isabelle Lemay
+ Jake Nicholson
+ Jakob Jungels
+ Jamaal Bradley
+ Jason Brashill
+ Jason Deakins
+ Jason Holtman
+ Jason Mitchell
+ Jay Stelly
+ Jeep Barnett
+ Jeff Ballinger
+ Jeff Lane
+ Jeff Lind
+ Jeremy Stone
+ Jess Cliffe
+ Jim Dosé
+ Jim Hughes
+ John Cook
+ John Morello II
+ Julie Caldwell
+ Kelly Thornton
+ Ken Birdwell
+ Kerry Davis
+ Kim Swift
+ Laura Dubuk
+ Leslie Hall
+ Marc Laidlaw
+ Martin Otten
+ Matt Boone
+ Matt Wright
+ Matthew Scott
+ Mike Dunkle
+ Mike Dussault
+ Moby Francke
+ Nick Maggiore
+ Philip Co - (As Phil Co)
+ Quintin Doroquez
+ Randy Lundeen
+ Richard Lord
+ Scott Dalton
+ Scott Klintworth
+ Scott Lynch
+ Stephane Gaudette
+ Steve McClure
+ Ted Backman
+ Tom Leonard
+ Torsten Zabka
+ Tristan Reidford
+ Wade Schin
+ Yahn Bernier

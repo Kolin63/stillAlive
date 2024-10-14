@@ -1,13 +1,13 @@
  
  
-!02;
+!0123;
 Forms FORM-29827281-12:
 Test Assessment Report
  
  
 !02;
 This was a triumph.
-!01800w
+!0180w
 !02;
 I'm making a note here:
 HUGE SUCCESS.
@@ -15,28 +15,31 @@ HUGE SUCCESS.
 It's hard to overstate
 !03;
 my satisfaction.
-!01600w
+!0180w
 !02;
 :0
 Aperture Science
 !02w
-!03;
+!0180;
 We do what we must
 because we can.
 !0170w
-!03;
+!0280;
 For the good of all of us.
 !0170;
 :1
 Except the ones who are dead.
  
-!04;
+!02w
+!0190;
 :0
 But there's no sense crying
 over every mistake.
+!0180;
 You just keep on trying
+!0170;
 till you run out of cake.
-!06;
+!02;
 :2
 And the Science gets done.
 And you make a neat gun.
@@ -46,7 +49,6 @@ For the people who are
 still alive.
 !02w
 }
- 
 !01;
 Forms FORM-55551-5:
 Personnel File Addendum:

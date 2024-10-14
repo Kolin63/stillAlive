@@ -24,7 +24,13 @@ void handleCredits(std::array<std::string, 7>& visibleCredits)
 			for (short letter{ 0 }; letter < credits[visibleLine].size(); ++letter)
 			{
 				visibleCredits[visibleLine - line][letter] = credits[visibleLine][letter];
-				waitMilliseconds(static_cast<int>(1 / credits[visibleLine].size() * 100));
+				if (credits[visibleLine][letter] == ' ' && credits[visibleLine].size() == 1 && visibleLine == line + 6)
+				{
+					waitMilliseconds(100);
+					continue;
+				}
+				if (visibleLine == line + 6)
+					waitMilliseconds(static_cast<int>(1000 / credits[visibleLine].size()));
 			}
 		}
 	}

@@ -23,3 +23,11 @@ void waitMilliseconds(int milliseconds)
 	std::this_thread::sleep_for(std::chrono::milliseconds(milliseconds));
 }
 
+void hideCursor()
+{
+	CONSOLE_CURSOR_INFO x{};
+	x.dwSize = 50;
+	x.bVisible = false;
+	SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &x);
+}
+

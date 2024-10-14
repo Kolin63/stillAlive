@@ -3,6 +3,6 @@
 #include <array>
 #include <vector>
 
-int printLyric(std::vector<std::string> lyrics, short line, short& x, short& y, int totalTime);
-void clearLyricWindow();
-void handleLyrics(std::vector<std::string> visibleLyrics);
+void printLyric(std::array<std::string, TOTAL_LYRIC_LINES>& lyrics, std::array<std::string, 28>& visibleLyrics, short line, short& x, short& y, int& totalTime, char& asciiIndex);
+void clearLyricWindow(std::array<std::string, 28>& visibleLyrics);
+void handleLyrics(std::array<std::string, 28>& visibleLyrics, char& asciiIndex);

@@ -1,10 +1,22 @@
 #include <string>
+#include <array>
+#include <iostream>
 #include "print.h"
+#include "util.h"
+#include "ascii.h"
 
-void print(std::string visibleLyrics[], std::string visibleCredits[])
+void print(std::array<std::string, 28>& visibleLyrics, std::array<std::string, 7>& visibleCredits, char& asciiIndex)
 {
-	[[maybe_unused]]
-	std::string x;
-	x = visibleLyrics[0];
-	x = visibleCredits[0];
+	for (short i{ 0 }; i < 27; ++i)
+	{
+		setCursorPosition(2, i + 1);
+		std::cout << visibleLyrics[i];
+	}
+	for (short i{ 0 }; i < 7; ++i)
+	{
+		setCursorPosition(57, i + 1);
+		std::cout << visibleCredits[i];
+	}
+	if (asciiIndex != '~') printAscii(asciiIndex);
+	asciiIndex = '~';
 }

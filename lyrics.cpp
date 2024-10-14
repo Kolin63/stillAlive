@@ -1,4 +1,3 @@
-//#include <mmsystem.h>
 #include <windows.h>
 #include <fstream>
 #include <iostream>
@@ -9,97 +8,67 @@
 #include "ascii.h"
 #pragma comment(lib, "winmm.lib") 
 
-void parseLyrics(std::vector<std::string> lyrics)
+void printLyric(std::array<std::string, TOTAL_LYRIC_LINES>& lyrics, std::array<std::string, 28>& visibleLyrics, short line, short& x, short& y, int& totalTime, char& asciiIndex)
 {
-	
-}
-
-int printLyric(std::vector<std::string> lyrics, short line, short& x, short& y, int totalTime)
-{
-	std::string_view temp{ lyrics[line] };
-
-	if (temp[0] == '!')
+	int ms {};
+	switch (lyrics[line][0])
 	{
-		short delaz{};
-		delaz += (static_cast<int>(temp[1]) - 48) * 10000;
-		delaz += (static_cast<int>(temp[2]) - 48) * 1000;
-		if (temp[3] == ';')
-			return delaz;
-		if (temp[3] == 'w')
+	case ('!'):
+		ms += static_cast<int>((lyrics[line][1] - 48) * 10000);
+		ms += static_cast<int>((lyrics[line][2] - 48) * 1000);
+		switch (lyrics[line][3])
 		{
-			waitMilliseconds(delaz);
-			return totalTime;
+		case (';'):
+			totalTime = ms;
+			return;
+		case ('w'): 
+			waitMilliseconds(ms);
+			return;
 		}
-		
-		delaz += (static_cast<int>(temp[3]) - 48) * 100;
-		delaz += (static_cast<int>(temp[4]) - 48) * 10;
-		if (temp[5] == 'w')
+		ms += static_cast<int>((lyrics[line][3] - 48) * 100);
+		ms += static_cast<int>((lyrics[line][4] - 48) * 10);
+		if (lyrics[line][5] == 'w')
 		{
-			waitMilliseconds(delaz);
-			return totalTime;
+			waitMilliseconds(ms);
+			return;
 		}
-
-		return delaz;
-	}
-	else if (temp == " ")
-	{
-		++y;
-		return totalTime;
-	}
-	else if (temp == "}")
-	{
-		clearLyricWindow();
-		x = 1;
+		totalTime = ms;
+		return;
+	case (':'):
+		asciiIndex = lyrics[line][1];
+		return;
+	case ('}'):
+		clearLyricWindow(visibleLyrics);
 		y = 1;
-		return totalTime;
-	}
-	else if (temp[0] == ':')
-	{
-		printAscii(temp[1]);
-		++line;
-		return totalTime;
-	}
-	else if (temp == "&")
-	{
-		++line;
-		return totalTime;
-	}
-	
-	if (line != 0)
-	if (lyrics[line - 1] == "&")
-	{
-		++x;
+		return;
+	case ('&'):
 		--y;
+		++x;
+		return;
 	}
+
 	for (short i{ 0 }; i < lyrics[line].size(); ++i)
 	{
-		setCursorPosition(++x, y);
-		std::cout << temp[i]; 
-
-		waitMilliseconds(static_cast<int>(totalTime / temp.size()));
-
-		
+		visibleLyrics[y][++x - 2] = lyrics[line][i];
+		waitMilliseconds(static_cast<int>(totalTime / lyrics[line].size()));
 	}
-	y += 1;
-
-	return totalTime;
+	++y;
 }
 
-void clearLyricWindow()
+void clearLyricWindow(std::array<std::string, 28>& visibleLyrics)
 {
 	for (short i{ 1 }; i < 28; ++i)
 	{
-		setCursorPosition(1, i);
-		std::cout << "                                                     ";
+        visibleLyrics[i] = std::string(52, ' ');  // 52 spaces
 	}
 }
 
-void handleLyrics(std::vector<std::string> visibleLyrics)
+void handleLyrics(std::array<std::string, 28>& visibleLyrics, char& asciiIndex)
 {
 	short lyricX{};
-	short lyricY{};
+	short lyricY{ 1 };
 	int delay{};
-	std::vector<std::string> lyrics(TOTAL_LYRIC_LINES);
+	std::array<std::string, TOTAL_LYRIC_LINES> lyrics;
 
 	std::ifstream fs;
 	fs.open("assets/lyrics.txt");
@@ -111,7 +80,7 @@ void handleLyrics(std::vector<std::string> visibleLyrics)
 		lyrics[i] = temp;
 	}
 
-	for (short i{ 1 }; i < TOTAL_LYRIC_LINES + 1; ++i)
+	for (short i{ 2 }; i < TOTAL_LYRIC_LINES + 1; ++i)
     {
         if (lyrics[i - 1] != "&" && lyrics[i] != "&" && lyrics[i][0] != '!' && lyrics[i][0] != ':')
         {
@@ -119,9 +88,9 @@ void handleLyrics(std::vector<std::string> visibleLyrics)
         }
         if (i == 7)
         {
-			//PlaySound(TEXT("assets/stillAlive.wav"), NULL, SND_FILENAME | SND_ASYNC);
+			PlaySound(TEXT("assets/stillAlive.wav"), NULL, SND_FILENAME | SND_ASYNC);
         }
-        delay = printLyric(lyrics, i, lyricX, lyricY, delay);
+        printLyric(lyrics, visibleLyrics, i, lyricX, lyricY, delay, asciiIndex);
     }
 }
 
