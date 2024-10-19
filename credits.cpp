@@ -32,7 +32,7 @@ void handleCredits(std::array<std::string, 7>& visibleCredits)
 					continue;
 				}
 				if (visibleLine == line + 6)
-					waitMilliseconds(static_cast<int>(1000 / credits[visibleLine].size()));
+					waitMilliseconds(static_cast<int>(1700 / credits[visibleLine].size()));
 			}
 		}
 	}

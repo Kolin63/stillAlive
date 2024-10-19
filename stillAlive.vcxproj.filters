@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{af045b88-5558-42f9-b796-488192b5efe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\ASCII">
+      <UniqueIdentifier>{c68c98bd-3bd2-47af-bdad-8e3b6e41a569}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -50,5 +56,51 @@
     <ClInclude Include="print.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="assets\credits.txt">
+      <Filter>Assets</Filter>
+    </Text>
+    <Text Include="assets\frame.txt">
+      <Filter>Assets</Filter>
+    </Text>
+    <Text Include="assets\lyrics.txt">
+      <Filter>Assets</Filter>
+    </Text>
+    <Text Include="assets\ascii\0.txt">
+      <Filter>Assets\ASCII</Filter>
+    </Text>
+    <Text Include="assets\ascii\1.txt">
+      <Filter>Assets\ASCII</Filter>
+    </Text>
+    <Text Include="assets\ascii\2.txt">
+      <Filter>Assets\ASCII</Filter>
+    </Text>
+    <Text Include="assets\ascii\3.txt">
+      <Filter>Assets\ASCII</Filter>
+    </Text>
+    <Text Include="assets\ascii\4.txt">
+      <Filter>Assets\ASCII</Filter>
+    </Text>
+    <Text Include="assets\ascii\5.txt">
+      <Filter>Assets\ASCII</Filter>
+    </Text>
+    <Text Include="assets\ascii\6.txt">
+      <Filter>Assets\ASCII</Filter>
+    </Text>
+    <Text Include="assets\ascii\7.txt">
+      <Filter>Assets\ASCII</Filter>
+    </Text>
+    <Text Include="assets\ascii\8.txt">
+      <Filter>Assets\ASCII</Filter>
+    </Text>
+    <Text Include="assets\ascii\9.txt">
+      <Filter>Assets\ASCII</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="assets\stillAlive.wav">
+      <Filter>Assets</Filter>
+    </Media>
   </ItemGroup>
 </Project>

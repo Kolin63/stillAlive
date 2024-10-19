@@ -145,6 +145,24 @@
     <ClInclude Include="print.h" />
     <ClInclude Include="util.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="assets\ascii\0.txt" />
+    <Text Include="assets\ascii\1.txt" />
+    <Text Include="assets\ascii\2.txt" />
+    <Text Include="assets\ascii\3.txt" />
+    <Text Include="assets\ascii\4.txt" />
+    <Text Include="assets\ascii\5.txt" />
+    <Text Include="assets\ascii\6.txt" />
+    <Text Include="assets\ascii\7.txt" />
+    <Text Include="assets\ascii\8.txt" />
+    <Text Include="assets\ascii\9.txt" />
+    <Text Include="assets\credits.txt" />
+    <Text Include="assets\frame.txt" />
+    <Text Include="assets\lyrics.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="assets\stillAlive.wav" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

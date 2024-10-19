@@ -5,8 +5,8 @@
  
  
  
- 171 lines (replace this w/ space)
--49 char-----------------------------------------
+ 
+ 
  
  
  
@@ -29,13 +29,118 @@ Lyrics - Jonathan Coulton
  
 Help From:
 ChatGPT
-StackOverflow
+Stack Overflow
 cppreference.com
 learncpp.com
 learn.microsoft.com
-Portal - 'Still Alive' by OTG
+Portal - 'Still Alive' posted by OTG
          youtube.com/watch?v=Y6ljFaKRTrI
  
+ 
+Dev Log:
+This is the ending credits
+song played at the end of 
+Portal, one of my favorite
+games.
+ 
+I have seen multiple adaptations
+of Still Alive or Want You Gone
+(from Portal 2), but not many of
+them have fully replicated it. 
+ 
+Of course, mine isn't perfect
+either, but I put in a lot
+of work to make it as close
+as possible. 
+ 
+In this written dev log,
+I will go over the process of
+how I made this, and hopefully
+provide enough information if
+you want to do it yourself.
+ 
+In terms of the basics, 
+this is all written in C++.
+I have been learning C++ for
+around a year, although I
+had a lot of programming
+experience before hand. 
+ 
+The most important (non-trivial)
+libraries I used are <windows.h>,
+<thread>, and <chrono>. 
+ 
+<windows.h> lets me change the
+text color, move the cursor around,
+and overwrite text.
+Documentation at  learn.microsoft.com/
+en-us/windows/console/console-functions
+ 
+<thread> is how I achieve the
+lyrics and credits writing
+at different speeds. This was
+really important for me to get
+right, because other versions
+of Still Alive that I have seen
+updated the credits window during
+the same ticks, and it didn't
+look as cool. <thread>, as
+implied by the name, lets you
+run code on more than one thread. 
+How my code works is that I have
+my default main thread, a lyrics
+thread, and a credits thread.
+The lyrics and credits thread
+are passed variables as references
+so that the three threads can share
+data. The 2 threads write their
+output to a string array, which
+is printed in the main thread. 
+ 
+<chrono> is only used for waiting
+milliseconds in between characters,
+but not much could be done without it.
+The function to wait can be found
+with a simple Stack Overflow search. 
+ 
+The method I used to actually make
+the lyrics was essentially a
+parsing system. You can check
+this out yourself by going into
+/assets/lyrics.txt in the source.
+So I would edit that txt and put in
+the timings and the text, as well
+as other commands that I needed
+to implement, and it would be parsed
+and executed during runtime.
+For example,
+```
+!0200;
+!0100;
+This was a triumph
+```
+Would mean, wait two seconds, then
+print "This was a triumph" over a
+total of 1 second. The credits
+(this) are a bit simpler, where
+each line takes around 1.5 seconds
+to print, without any commands. 
+ 
+Fun fact: although Still Alive is
+rendered in real time, it does not
+limit itself to one monospaced
+text box. Most annoyingly, the
+ASCII art in the bottom right
+corner is on its own grid and is
+scaled down. In fact, this 
+credits window should be half
+the height of the lyrics
+window, but the ASCII pushes
+it up because I did not
+scale it down (that would
+be kind of impossible). 
+ 
+Bye!!!
  
  
 THANK YOU FOR PARTICIPATING

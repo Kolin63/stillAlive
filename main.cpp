@@ -2,7 +2,6 @@
 #include <thread>
 #include <string>
 #include <array>
-
 #include "util.h"
 #include "credits.h"
 #include "lyrics.h"
