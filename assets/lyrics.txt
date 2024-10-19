@@ -1,20 +1,20 @@
  
  
-!0200;
+!0201;
 Forms FORM-29827281-12:
-!0123;
+!0200;
 Test Assessment Report
  
  
-!0220w
-!0200;
-This was a triumph.
-!0123w
+!0223w
 !0122;
+This was a triumph.
+!0200w
+!0201;
 I'm making a note here:
-!0121
+!0122
 HUGE SUCCESS.
-!0100w
+!0101w
 !0208
 It's hard to overstate
 !0213;
@@ -23,40 +23,40 @@ my satisfaction.
 !0116;
 :0
 Aperture Science
-!0204w
-!0112;
+!0203w
+!0113;
 We do what we must
-!0115;
+!0119;
 because we can.
-!0120w
-!0300;
+!0117w
+!0301;
 For the good of all of us.
-!0009w
-!0115;
+!0007w
+!0116;
 :1
 Except the ones who are dead.
  
-!0020w
-!0185;
+!0011w
+!0120;
 :0
 But there's no sense crying
-!0175;
+!0118;
 over every mistake.
-!0188;
+!0205;
 You just keep on trying
-!0170;
+!0119;
 till you run out of cake.
-!02;
+!0200;
 :2
 And the Science gets done.
-!0160;
+!0120;
 And you make a neat gun.
 :0
-!0147;
+!0105;
 For the people who are
-!01;
+!0111;
 still alive.
-!02w
+!0120w
 }
 !0084;
 Forms FORM-55551-5:

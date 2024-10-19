@@ -19,23 +19,24 @@ void printLyric(std::array<std::string, TOTAL_LYRIC_LINES>& lyrics, std::array<s
 		switch (lyrics[line][3])
 		{
 		case (';'):
-			totalTime = ms;
+			totalTime = static_cast<int>(ms * 0.9473684);
 			return;
 		case ('w'): 
-			waitMilliseconds(ms);
+			waitMilliseconds(static_cast<int>(ms * 0.9473684));
 			return;
 		}
 		ms += static_cast<int>((lyrics[line][3] - 48) * 416.667);
 		ms += static_cast<int>((lyrics[line][4] - 48) * 41.6667);
 		if (lyrics[line][5] == 'w')
 		{
-			waitMilliseconds(ms);
+			waitMilliseconds(static_cast<int>(ms * 0.9473684));
 			return;
 		}
-		totalTime = ms;
+		totalTime = static_cast<int>(ms * 0.9473684);
 		return;
 	case (':'):
 		asciiIndex = lyrics[line][1];
+		totalTime = static_cast<int>(totalTime * 0.988);
 		return;
 	case ('}'):
 		clearLyricWindow(visibleLyrics);
