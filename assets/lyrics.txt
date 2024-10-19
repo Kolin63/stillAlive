@@ -58,169 +58,176 @@ For the people who are
 still alive.
 !0120w
 }
-!0084;
+!0014;
 Forms FORM-55551-5:
-!0100;
+!0104;
 Personnel File Addendum:
  
-!02;
+!0207;
 Dear <<Subject Name Here>>,
  
-!01w
-!02;
+!0123;
 I'm not even angry.
-!02w
-!0380;
+!0209w
+!0309;
 I'm being so sincere right now.
-!0189w
-!0150;
+!0117w
+!0121;
 Even though you
+!0112
 :3
 &
 broke my heart.
-!0187;
+!0109;
 And killed me.
-!02w
+!0201w
+!0114
 :6
 And tore me to pieces.
-!02w
-!0277;
+!0210w
+!0109;
 And threw every piece
-:4
-!0003w
+!0010w
+!0011;
 &
-!0010;
 into
-!0090w
-!0095;
+!0009w
+!0022;
+:4
+&
 a fire.
-!0183w
-!0295;
+!0117w
+!0305;
 As they burned it hurt because
-!0196;
+!0114;
 :5
 I was so happy for you!
 !0012w
-!0198;
+!0201;
 Now these points of data
-!0115;
+!0120;
 make a beautiful line.
-!0198;
+!0202;
 And we're out of beta.
-!0115;
+!0123;
 We're releasing on time.
-!0198;
+!0201;
 So I'm GLaD. I got burned.
+!0203
 :2
 Think of all the things we learned
+!0112;
 :0
-!0110;
 For the people who are
-!02;
+!0115;
 still alive.
-!01w
+!0118w
 }
  
-!0015;
+!0011;
 Forms FORM-55551-6:
-!0100;
+!0109;
 Personnel File Addendum Addendum:
  
-!01w
-!0119;
+!0020w
+!0121;
 One last thing:
  
-!0120;
+!0121;
 Go ahead and leave me.
-!0119w
-!03;
+!0109w
+!0311;
 I think I prefer to stay inside.
-!02w
-!0319;
+!0119w
+!0309;
 Maybe you'll find someone else
-!0103;
+!0106;
 to help you.
-!02w
-!0010;
+!0208w
+!0009;
 Maybe
+!0109;
 :7
-!0120;
 &
 Black Mesa
-!0100;
+!0115;
 &
 ...
 !0014w
-!0110;
+!0109;
 THAT WAS A JOKE. 
-!0102;
-!01w
+!0101w
+!0103;
 &
 FAT CHANCE.
-!0115w
-!0100;
+!0114w
+!0111;
 Anyway,
+!0115;
 :8
 &
-!0116;
 this cake is great.
-!0120;
+!0204;
 It's so delicious and moist.
-!02;
+!0120;
 :9
 Look at me still talking
-when there's Science to do.
-:0
-!0116;
-When I look out there,
-it makes me GLaD I'm not you.
-:2
 !0120;
-I've experiments to run.
-:6
-!0200;
-There is research to be done.
-:0
-!0115;
-On the people who are
-!0118;
-still alive.
-}
- 
- 
- 
-!0207;
-PS: And believe me I am
-!0102;
-still alive.
-!0019w
-!0203;
-PPS: I'm doing Science and I'm
-!0100;
-still alive.
-!0020w
-!0202;
-PPPS: I feel FANTASTIC and I'm
-!0100;
-still alive.
- 
-!0105;
-FINAL THOUGHT:
+when there's Science to do.
 !0116;
-While you're dying I'll be
-!0106;
+:0
+When I look out there,
+!0203
+it makes me GLaD I'm not you.
+!0202;
+:2
+I've experiments to run.
+!0116;
+:6
+There is research to be done.
+!0111;
+:0
+On the people who are
+!0112;
 still alive.
- 
-!0020;
-FINAL THOUGHT PS:
-!0122;
-And when you're dead I will be
-!0104;
-still alive.
- 
-!0022w
-!0104;
-STILL ALIVE
-!0003w
+!0012w
 }
  
+ 
+ 
+!0202;
+PS: And believe me I am
+!0100;
+still alive.
+!0022w
+!0202;
+PPS: I'm doing Science and I'm
+!0101;
+still alive.
+!0015w
+!0203;
+PPPS: I feel FANTASTIC and I'm
+!0023;
+still alive.
+ 
+!0101;
+FINAL THOUGHT:
+!0115;
+While you're dying I'll be
+!0105;
+still alive.
+ 
+!0022;
+FINAL THOUGHT PS:
+!0121;
+And when you're dead I will be
+!0105;
+still alive.
+ 
+!0017w
+!0106;
+STILL ALIVE
+!0100w
+}
+!0512w
+>

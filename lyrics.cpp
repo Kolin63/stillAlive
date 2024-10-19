@@ -49,6 +49,9 @@ void printLyric(std::array<std::string, TOTAL_LYRIC_LINES>& lyrics, std::array<s
 	case (' '):
 		++y;
 		return;
+	case ('>'):
+		asciiIndex = '>';
+		return;
 	}
 
 	for (short i{ 0 }; i < lyrics[line].size(); ++i)
@@ -84,7 +87,7 @@ void handleLyrics(std::array<std::string, 28>& visibleLyrics, char& asciiIndex)
 		lyrics[i] = temp;
 	}
 
-	for (short i{ 2 }; i < TOTAL_LYRIC_LINES + 1; ++i)
+	for (short i{ 2 }; i < TOTAL_LYRIC_LINES; ++i)
     {
         if (lyrics[i - 1] != "&" && lyrics[i] != "&" && lyrics[i][0] != '!' && lyrics[i][0] != ':')
         {

@@ -16,7 +16,7 @@ void handleCredits(std::array<std::string, 7>& visibleCredits)
 		credits[i] = temp;
 	}
 
-	waitMilliseconds(8800);
+	waitMilliseconds(8000);
 	
 	for (short line{ 0 }; line < TOTAL_CREDITS_LINES; ++line)
 	{

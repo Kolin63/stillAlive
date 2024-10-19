@@ -13,6 +13,7 @@ int main()
 {
     setConsoleColor(6);
     hideCursor();
+    setConsoleTitle();
     printFile("assets/frame.txt", 0, 0);
 
     std::array<std::string, 28> visibleLyrics; 
@@ -20,8 +21,8 @@ int main()
     char asciiIndex{ '~' };
     for (short i{ 0 }; i < 28; ++i)
     {
-        visibleLyrics[i] = std::string(52, ' ');  // 52 spaces
-        if (i < 7) visibleCredits[i] = std::string(52, ' ');  // 48 spaces
+        visibleLyrics[i] = std::string(52, ' ');  
+        if (i < 7) visibleCredits[i] = std::string(52, ' ');  
     }
 
     std::thread creditsThread{ handleCredits, std::ref(visibleCredits) };
@@ -31,13 +32,16 @@ int main()
     while (true)
     {
         print(visibleLyrics, visibleCredits, asciiIndex);
+        if (asciiIndex == '>')
+        {
+            //creditsThread.join();
+            //lyricsThread.join();
+            setConsoleColor(15);
+            return 0;
+        }
     }
-    
-    char c;
-    std::cin >> c;
 
     setConsoleColor(15);
-
     return 0;
 }
 

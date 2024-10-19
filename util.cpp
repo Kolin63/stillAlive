@@ -31,3 +31,9 @@ void hideCursor()
 	SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &x);
 }
 
+void setConsoleTitle()
+{
+	const wchar_t* x{ L"STILL ALIVE" };
+	SetConsoleTitle(x);
+}
+
