@@ -25,7 +25,8 @@ int main()
     }
 
     std::thread creditsThread{ handleCredits, std::ref(visibleCredits) };
-    std::thread lyricsThread{ handleLyrics, std::ref(visibleLyrics), std::ref(asciiIndex)};
+    std::thread lyricsThread{ handleLyrics, std::ref(visibleLyrics), std::ref(asciiIndex) };
+
 
     while (true)
     {

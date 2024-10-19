@@ -25,8 +25,8 @@ void printLyric(std::array<std::string, TOTAL_LYRIC_LINES>& lyrics, std::array<s
 			waitMilliseconds(ms);
 			return;
 		}
-		ms += static_cast<int>((lyrics[line][3] - 48) * 100);
-		ms += static_cast<int>((lyrics[line][4] - 48) * 10);
+		ms += static_cast<int>((lyrics[line][3] - 48) * 416.667);
+		ms += static_cast<int>((lyrics[line][4] - 48) * 41.6667);
 		if (lyrics[line][5] == 'w')
 		{
 			waitMilliseconds(ms);
@@ -44,6 +44,9 @@ void printLyric(std::array<std::string, TOTAL_LYRIC_LINES>& lyrics, std::array<s
 	case ('&'):
 		--y;
 		++x;
+		return;
+	case (' '):
+		++y;
 		return;
 	}
 
@@ -86,7 +89,7 @@ void handleLyrics(std::array<std::string, 28>& visibleLyrics, char& asciiIndex)
         {
             lyricX = 2;
         }
-        if (i == 7)
+        if (i == 9)
         {
 			PlaySound(TEXT("assets/stillAlive.wav"), NULL, SND_FILENAME | SND_ASYNC);
         }

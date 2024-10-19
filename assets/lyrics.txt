@@ -1,56 +1,66 @@
  
  
-!0123;
+!0200;
 Forms FORM-29827281-12:
+!0123;
 Test Assessment Report
  
  
-!02;
+!0220w
+!0200;
 This was a triumph.
-!0180w
-!02;
+!0123w
+!0122;
 I'm making a note here:
+!0121
 HUGE SUCCESS.
-!0080w
+!0100w
+!0208
 It's hard to overstate
-!03;
+!0213;
 my satisfaction.
-!0180w
-!02;
+!0210w
+!0116;
 :0
 Aperture Science
-!02w
-!0180;
+!0204w
+!0112;
 We do what we must
+!0115;
 because we can.
-!0170w
-!0280;
+!0120w
+!0300;
 For the good of all of us.
-!0170;
+!0009w
+!0115;
 :1
 Except the ones who are dead.
  
-!02w
-!0190;
+!0020w
+!0185;
 :0
 But there's no sense crying
+!0175;
 over every mistake.
-!0180;
+!0188;
 You just keep on trying
 !0170;
 till you run out of cake.
 !02;
 :2
 And the Science gets done.
+!0160;
 And you make a neat gun.
 :0
+!0147;
 For the people who are
 !01;
 still alive.
 !02w
 }
-!01;
+!0084;
 Forms FORM-55551-5:
+!0100;
 Personnel File Addendum:
  
 !02;
@@ -60,115 +70,157 @@ Dear <<Subject Name Here>>,
 !02;
 I'm not even angry.
 !02w
-!04;
+!0380;
 I'm being so sincere right now.
-!02w
+!0189w
 !0150;
 Even though you
 :3
 &
 broke my heart.
-!02;
+!0187;
 And killed me.
 !02w
 :6
 And tore me to pieces.
 !02w
-!03;
-And threw every piece into
+!0277;
+And threw every piece
 :4
+!0003w
 &
+!0010;
+into
+!0090w
+!0095;
 a fire.
-!02w
+!0183w
+!0295;
 As they burned it hurt because
-!02;
+!0196;
 :5
 I was so happy for you!
-!02;
+!0012w
+!0198;
 Now these points of data
+!0115;
 make a beautiful line.
+!0198;
 And we're out of beta.
+!0115;
 We're releasing on time.
+!0198;
 So I'm GLaD. I got burned.
 :2
 Think of all the things we learned
 :0
+!0110;
 For the people who are
 !02;
 still alive.
 !01w
 }
  
-!02;
+!0015;
 Forms FORM-55551-6:
+!0100;
 Personnel File Addendum Addendum:
  
 !01w
+!0119;
 One last thing:
  
+!0120;
 Go ahead and leave me.
-!02w
+!0119w
 !03;
 I think I prefer to stay inside.
 !02w
-!05;
+!0319;
 Maybe you'll find someone else
+!0103;
 to help you.
 !02w
-!02;
+!0010;
 Maybe
 :7
+!0120;
 &
 Black Mesa
-!02w
-!03;
-THAT WAS A JOKE. FAT CHANCE.
-!02w
-!03;
+!0100;
+&
+...
+!0014w
+!0110;
+THAT WAS A JOKE. 
+!0102;
+!01w
+&
+FAT CHANCE.
+!0115w
+!0100;
 Anyway,
 :8
 &
+!0116;
 this cake is great.
-!02;
+!0120;
 It's so delicious and moist.
 !02;
 :9
 Look at me still talking
 when there's Science to do.
 :0
+!0116;
 When I look out there,
 it makes me GLaD I'm not you.
 :2
+!0120;
 I've experiments to run.
 :6
+!0200;
 There is research to be done.
 :0
+!0115;
 On the people who are
-!02;
+!0118;
 still alive.
 }
  
  
  
-!03;
+!0207;
 PS: And believe me I am
+!0102;
 still alive.
-!01w
+!0019w
+!0203;
 PPS: I'm doing Science and I'm
+!0100;
 still alive.
-!01w
+!0020w
+!0202;
 PPPS: I feel FANTASTIC and I'm
+!0100;
 still alive.
  
-!08;
+!0105;
 FINAL THOUGHT:
+!0116;
 While you're dying I'll be
+!0106;
 still alive.
  
+!0020;
 FINAL THOUGHT PS:
+!0122;
 And when you're dead I will be
+!0104;
 still alive.
  
-!01w
-!01;
+!0022w
+!0104;
 STILL ALIVE
+!0003w
+}
+ 

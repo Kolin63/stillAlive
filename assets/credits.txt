@@ -38,7 +38,7 @@ the credits are over!
  Gray Horsfield
  Greg Winkler
  Hamish McKenzie
- Iestyn Bleasdale-Shepherd
+ Iestyn Bleasd
  Jason Mitchell
  Jason Ruymen
  Jeff Hameluck
@@ -83,31 +83,111 @@ Programming
 Visual Arts
  Bay Raitt
 Audio
- Jonathan Coulton - 'Still Alive' by
+ Jonathan Coulton 
  Kelly Bailey
  Mike Morasky
- Pat Cockburn - Voice recording scheduling and logistics
- Shana Landsburg - Voice Casting
- Teri Fiddleman - Voice Casting
+ Pat Cockburn - V
+ Shana Landsburg - V
+ Teri Fiddleman -
  Tim Larkin
 Voice Actor
- Ellen McLain - Voices: GlaDOS, Turrets
- Mike Patton - Voices: THE ANGER SPHERE
+ Ellen McLain - Voi
+ Mike Patton - Voi
 Business
- Alan Bruggeman - Crack Legal Team
- Dennis Tessier - Crack Legal Team
- Karl Quackenbush - Crack Legal Team
- Kevin Rosenfield - Crack Legal Team
- Kristen Boraas - Crack Legal Team
- Liam Lavery - Crack Legal Team
+ Alan Bruggeman - Cra
+ Dennis Tessier - Crac
+ Karl Quackenbush - C
+ Kevin Rosenfield 
+ Kristen Boraas - 
+ Liam Lavery - Cr
 Thanks
- Alésia Glidewell - Thanks for the use of their face: Chell
+ Alésia Glidew
 Unclassified
  Aaron Barber
  Aaron Seeler
  Alex Vlachos
  Alfred Reynolds
  Andrea Wicklund
+ Ariel Diaz
+ Bill Fletcher
+ Bill Van Buren
+ Brian Jacobson
+ Bryn Moslow
+ Carl Uhlman
+ Charlie Brown
+ Charlie Burgin
+ Chris Bokitch
+ Chris Green
+ Chris Grinstead
+ Dan Kircher
+ Dario Casali
+ Dave Riller
+ David Sawyer
+ David Speyrer
+ Derrick Birum
+ Dhabih Eng
+ Doug Lombardi
+ Doug Wood
+ Eric Kirchmer
+ Eric Smith
+ Eric Smith
+ Eric Twelker
+ Erik Johnson
+ Gabe Newell
+ Gary McTaggart
+ Greg Coomer
+ Ido Magal
+ Iikka Keränen
+ Isabelle Lemay
+ Jake Nicholson
+ Jakob Jungels
+ Jamaal Bradley
+ Jason Brashill
+ Jason Deakins
+ Jason Holtman
+ Jason Mitchell
+ Jay Stelly
+ Jeep Barnett
+ Jeff Ballinger
+ Jeff Lane
+ Jeff Lind
+ Jeremy Stone
+ Jess Cliffe
+ Jim Dosé
+ Jim Hughes
+ John Cook
+ John Morello II
+ Julie Caldwell
+ Kelly Thornton
+ Ken Birdwell
+ Kerry Davis
+ Kim Swift
+ Laura Dubuk
+ Leslie Hall
+ Marc Laidlaw
+ Martin Otten
+ Matt Boone
+ Matt Wright
+ Matthew Scott
+ Mike Dunkle
+ Mike Dussault
+ Moby Francke
+ Nick Maggiore
+ Philip Co - (As Phil Co)
+ Quintin Doroquez
+ Randy Lundeen
+ Richard Lord
+ Scott Dalton
+ Scott Klintworth
+ Scott Lynch
+ Stephane Gaudette
+ Steve McClure
+ Ted Backman
+ Tom Leonard
+ Torsten Zabka
+ Tristan Reidford
+ Wade Schin
+ Yahn Bernier
  Ariel Diaz
  Bill Fletcher
  Bill Van Buren
