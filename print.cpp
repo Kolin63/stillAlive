@@ -17,6 +17,7 @@ void print(std::array<std::string, 28>& visibleLyrics, std::array<std::string, 7
 		setCursorPosition(57, i + 1);
 		std::cout << visibleCredits[i];
 	}
+	if (asciiIndex == '>') return;
 	if (asciiIndex != '~') printAscii(asciiIndex);
 	asciiIndex = '~';
 }

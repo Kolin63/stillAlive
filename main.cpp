@@ -33,8 +33,8 @@ int main()
         print(visibleLyrics, visibleCredits, asciiIndex);
         if (asciiIndex == '>')
         {
-            //creditsThread.join();
-            //lyricsThread.join();
+            creditsThread.join();
+            lyricsThread.join();
             setConsoleColor(15);
             return 0;
         }

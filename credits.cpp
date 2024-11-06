@@ -31,11 +31,12 @@ void handleCredits(std::array<std::string, 7>& visibleCredits)
 					waitMilliseconds(100);
 					continue;
 				}
-				if (visibleLine == line + 6)
-					waitMilliseconds(static_cast<int>(1700 / credits[visibleLine].size()));
+				if (visibleLine == line + 6) // if line being drawn is the bottom line, give it typing effect
+					waitMilliseconds(static_cast<int>(1000 / credits[visibleLine].size()));
 			}
 		}
 	}
+	while (true) {};
 
 	return;
 }

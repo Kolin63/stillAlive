@@ -33,8 +33,8 @@ Stack Overflow
 cppreference.com
 learncpp.com
 learn.microsoft.com
-Portal - 'Still Alive' posted by OTG
-         youtube.com/watch?v=Y6ljFaKRTrI
+Portal - 'Still Alive' posted by OTG:
+youtube.com/watch?v=Y6ljFaKRTrI
  
  
 Dev Log:
@@ -82,13 +82,13 @@ at different speeds. This was
 really important for me to get
 right, because other versions
 of Still Alive that I have seen
-updated the credits window during
-the same ticks, and it didn't
-look as cool. <thread>, as
-implied by the name, lets you
-run code on more than one thread. 
-How my code works is that I have
-my default main thread, a lyrics
+updated the credits and lyrics 
+windows during the same ticks, 
+and it didn't look as cool.
+<thread>, as implied by the name, 
+lets you run code on more than one 
+thread. In my code, I have
+a default main thread, a lyrics
 thread, and a credits thread.
 The lyrics and credits thread
 are passed variables as references
@@ -123,7 +123,7 @@ Would mean, wait two seconds, then
 print "This was a triumph" over a
 total of 1 second. The credits
 (this) are a bit simpler, where
-each line takes around 1.5 seconds
+each line takes around 1 second
 to print, without any commands. 
  
 Fun fact: although Still Alive is
@@ -140,7 +140,33 @@ it up because I did not
 scale it down (that would
 be kind of impossible). 
  
-Bye!!!
+I know this all scrolled really
+quickly, so you can just read
+this all on GitHub. 
+That will be on 
+github.com/Kolin63/stillAlive
+ 
+I will conclude these credits
+with the first part of the
+story 'Nate the Snake' which
+can be read on natethesnake.com
+ 
+So, there's a man crawling 
+through the desert.
+ 
+He'd decided to try his SUV 
+in a little bit of cross-country 
+travel, had great fun zooming 
+over the badlands and through 
+the sand, got lost, hit a big 
+rock, and then he couldn't get 
+it started again. There were no 
+cell phone towers anywhere near, 
+so his cell phone was useless. 
+He had no family, his parents 
+had died a few years before in 
+ 
+ok thats all i have time for bye
  
  
 THANK YOU FOR PARTICIPATING
