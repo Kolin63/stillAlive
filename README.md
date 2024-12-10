@@ -1,4 +1,5 @@
 # Still Alive
+![Image](https://github.com/Kolin63/stillAlive/blob/master/assets/promo.png?raw=true)
 Hello! I'm Colin, and this is Portal's 'Still Alive' replicated in Windows cmd.
 On your computer, it might not be perfect because I was too lazy to implement delta time. Sorry. Maybe I'll do that later.
 I have also experienced issues with past projects of some libraries not being installed by default on your computer, so please leave an issue if it crashes or something.
