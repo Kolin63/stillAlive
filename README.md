@@ -7,6 +7,9 @@ I have also experienced issues with past projects of some libraries not being in
 [YouTube](https://youtu.be/6-cho8eZCMI?si=ahcz1tzxX0TY0ur8)
 
 ## Download
+Make sure you have [git](https://git-scm.com/downloads) installed. 
+Or, you can download the source right from GitHub. 
+
 In CMD, run `git clone https://github.com/Kolin63/stillAlive`
 
 Then, `cd stillAlive`
